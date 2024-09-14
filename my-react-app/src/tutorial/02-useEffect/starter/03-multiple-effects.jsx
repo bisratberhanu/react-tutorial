@@ -3,14 +3,14 @@ import { useState, useEffect } from 'react';
 const MultipleEffects = () => {
   const [value, setValue] = useState(0);
   const [secondValue, setSecondValue] = useState(0);
-
-  // useEffect(() => {
-  //   console.log('hello from first useEffect');
-  // }, []);
-
-  // useEffect(() => {
-  //   console.log('hello from second useEffect');
-  // }, []);
+  useEffect(()=>{
+    console.log("hello there from first useeffect");
+    
+  },[value, secondValue])
+  useEffect(()=>{
+    console.log("hello there from second useeffect");
+    
+  },[])
   return (
     <div>
       <h1>value : {value}</h1>
