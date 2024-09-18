@@ -6,6 +6,7 @@ const Example = () => {
     <div>
         <FirstComponent/>
         <SecondComponent/>
+        
     </div>
   )
 }
